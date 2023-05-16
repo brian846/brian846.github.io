@@ -15,6 +15,9 @@
 .status-bar__column:first-child span {
   margin-right: 4px;
 }
+.status-bar__column:first-child i {
+  margin-right: 4px;
+}
 .status-bar__column:nth-child(2) span {
   margin-right: 40px;
 }
@@ -53,13 +56,19 @@
   color: black;
   font-weight: 500;
 }
-.user-component__column-top {
+.user-component__column-top,
+.user-component__column-top-two,
+.user-component__column-top-three,
+.user-component__column-top-four {
   display: flex;
   padding: 10px;
   border-bottom: 1px solid gainsboro;
   margin: 0px 20px;
 }
-.user-component__column-top img {
+.user-component__column-top img,
+.user-component__column-top-two img,
+.user-component__column-top-three img,
+.user-component__column-top-four img {
   width: 90px;
   height: 130px;
   border-radius: 50px;

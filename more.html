@@ -12,19 +12,18 @@
   </head>
   <main>
     <div class="status-bar">
+      <!-- This creates the service bar, the time, the battery life percent and the charging status. -->
       <div class="status-bar__column">
         <span>Vodacom 4G</span>
-        <!--Network Icon Here-->
         <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-location-arrow" style="color: #000000"></i>
       </div>
       <div class="status-bar__column">
         <span>13:00</span>
       </div>
       <div class="status-bar__column">
         <span>90%</span>
-        <!--Battery Icon here-->
         <i class="fa-solid fa-battery-three-quarters"></i>
-        <!--and the Lightning Icon-->
         <i class="fa-solid fa-bolt" style="color: #1b1c1d"></i>
       </div>
     </div>
@@ -133,13 +132,23 @@
           </div>
           <div class="apps-name">Kakao Story</div>
         </div>
+        <div class="suggestions__apps-gem-quest">
+          <div class="apps-icon">
+            <i class="fa-solid fa-cat fa-2x" style="color: #ffffff"></i>
+          </div>
+          <div class="apps-name">Gem Quest</div>
+        </div>
         <div class="suggestions__apps-kakao-friends">
-          <div class="apps-icon"></div>
+          <div class="apps-icon">
+            <i class="fa-solid fa-user-group fa-2x" style="color: #ffffff"></i>
+          </div>
           <div class="apps-name">Kakao Friends</div>
         </div>
-        <div class="suggestions__apps-gem-quest">
-          <div class="apps-icon"></div>
-          <div class="apps-name">Gem Quest</div>
+        <div class="suggestions__apps-pet-grab">
+          <div class="apps-icon">
+            <i class="fa-solid fa-dog fa-2x" style="color: #ffffff"></i>
+          </div>
+          <div class="apps-name">Pet 'n' Grab</div>
         </div>
       </div>
     </div>
@@ -177,10 +186,12 @@
       </ul>
     </nav>
 
+    <!-- This is the splash screen, an animated screen which will pop up after the page is loaded. -->
     <div id="splash-screen">
       <i class="fa-solid fa-regular fa-comment" style="color: #000000"></i>
     </div>
 
+    <!-- For the screen pixels, try using a maximum-width of 500px, and the height sould be more than 880px -->
     <div id="no-mobile">
       <span>Your screen is too big 😣</span>
     </div>

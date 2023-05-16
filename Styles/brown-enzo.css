@@ -15,6 +15,9 @@ have a custom made text message input on the lower part of the screen */
 .status-bar__column:first-child span {
   margin-right: 4px;
 }
+.status-bar__column:first-child i {
+  margin-right: 4px;
+}
 .status-bar__column:nth-child(2) span {
   margin-right: 40px;
 }

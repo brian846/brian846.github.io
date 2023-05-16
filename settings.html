@@ -12,19 +12,18 @@
   </head>
   <main>
     <div class="status-bar">
+      <!-- This creates the service bar, the time, the battery life percent and the charging status. -->
       <div class="status-bar__column">
         <span>Vodacom 4G</span>
-        <!--Network Icon Here-->
         <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-location-arrow" style="color: #000000"></i>
       </div>
       <div class="status-bar__column">
         <span>13:00</span>
       </div>
       <div class="status-bar__column">
         <span>90%</span>
-        <!--Battery Icon here-->
         <i class="fa-solid fa-battery-three-quarters"></i>
-        <!--and the Lightning Icon-->
         <i class="fa-solid fa-bolt" style="color: #1b1c1d"></i>
       </div>
     </div>
@@ -98,7 +97,14 @@
         </div>
         <div class="settings__name">Themes</div>
         <div class="N-notification">N</div>
-        <div class="additional-theme">Default theme</div>
+        <div class="additional-theme">Light Mode</div>
+      </div>
+      <div class="settings__list-advanced-settings">
+        <div class="version__icon">
+          <i class="fa-solid fa-gears fa-lg" style="color: #000000"></i>
+        </div>
+        <div class="settings__name">Advanced</div>
+        <div class="additional-setting">Default</div>
       </div>
     </div>
 
@@ -135,6 +141,7 @@
       </ul>
     </nav>
 
+    <!-- For the screen pixels, try using a maximum-width of 500px, and the height sould be more than 880px -->
     <div id="no-mobile">
       <span>Your screen is too big 😣</span>
     </div>

@@ -12,19 +12,18 @@
   </head>
   <main>
     <div class="status-bar">
+      <!-- This creates the service bar, the time, the battery life percent and the charging status. -->
       <div class="status-bar__column">
         <span>Vodacom 4G</span>
-        <!--Network Icon Here-->
         <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-location-arrow" style="color: #000000"></i>
       </div>
       <div class="status-bar__column">
         <span>13:00</span>
       </div>
       <div class="status-bar__column">
         <span>90%</span>
-        <!--Battery Icon here-->
         <i class="fa-solid fa-battery-three-quarters"></i>
-        <!--and the Lightning Icon-->
         <i class="fa-solid fa-bolt" style="color: #1b1c1d"></i>
       </div>
     </div>
@@ -83,79 +82,152 @@
       </div>
 
       <!-- The Feed Columns -->
-      <div class="feed__column-feed-one">
-        <div class="feed-one__details">
-          <h5 class="title-one">#BTS</h5>
-          <h6 class="hashtags-one">#bts#party#friends</h6>
-          <div class="additional-one">
+      <div id="all__feeds">
+        <div class="feed__column-feed-one">
+          <div class="feed-one__details">
+            <h5 class="title-one">#BTS</h5>
+            <h6 class="hashtags-one">#bts#party#friends</h6>
+            <div class="additional-one">
+              <img
+                class="post-avatar"
+                src="https://th.bing.com/th/id/OIP.SzIBiGMCQbPXXyt-Nk1zRQHaE8?w=237&h=180&c=7&r=0&o=5&pid=1.7"
+              />
+              <span class="member-count-one">1,107 members</span>
+              <div class="divider">|</div>
+              <span class="member-status">Active</span>
+            </div>
+          </div>
+          <div class="feed-one__image">
             <img
-              class="post-avatar"
-              src="https://th.bing.com/th/id/OIP.SzIBiGMCQbPXXyt-Nk1zRQHaE8?w=237&h=180&c=7&r=0&o=5&pid=1.7"
+              src="https://th.bing.com/th/id/OIP.aGESKGrrPsddiy37DBvNsQHaFh?w=236&h=180&c=7&r=0&o=5&pid=1.7"
             />
-            <span class="member-count-one">1,107 members</span>
-            <div class="divider">|</div>
-            <span class="member-status">Active</span>
+            <div id="feed-one__image-likes">
+              <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i>768
+            </div>
           </div>
         </div>
-        <div class="feed-one__image">
-          <img
-            src="https://th.bing.com/th/id/OIP.aGESKGrrPsddiy37DBvNsQHaFh?w=236&h=180&c=7&r=0&o=5&pid=1.7"
-          />
-          <div id="feed-one__image-likes">
-            <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i>768
-          </div>
-        </div>
-      </div>
 
-      <div class="feed__column-feed-two">
-        <div class="feed-two__details">
-          <h5 class="title-two">#BTS</h5>
-          <h6 class="hashtags-two">#bts#safari#tours</h6>
-          <div class="additional-two">
+        <div class="feed__column-feed-two">
+          <div class="feed-two__details">
+            <h5 class="title-two">#BTS</h5>
+            <h6 class="hashtags-two">#bts#safari#tours</h6>
+            <div class="additional-two">
+              <img
+                class="post-avatar"
+                src="https://th.bing.com/th/id/OIP.xhzddHb6769IlnX0p4KXBAHaD3?w=309&h=180&c=7&r=0&o=5&pid=1.7"
+              />
+              <span class="member-count-two">1,982 members</span>
+              <div class="divider">|</div>
+              <span class="member-status">Offline</span>
+            </div>
+          </div>
+          <div class="feed-two__image">
             <img
-              class="post-avatar"
-              src="https://th.bing.com/th/id/OIP.xhzddHb6769IlnX0p4KXBAHaD3?w=309&h=180&c=7&r=0&o=5&pid=1.7"
+              src="https://th.bing.com/th/id/OIP.NxoaKN3iRnD5ooWSxmho_AHaEc?w=286&h=180&c=7&r=0&o=5&pid=1.7"
             />
-            <span class="member-count-two">1,982 members</span>
-            <div class="divider">|</div>
-            <span class="member-status">Offline</span>
+            <div id="feed-two__image-likes">
+              <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i>438
+            </div>
           </div>
         </div>
-        <div class="feed-two__image">
-          <img
-            src="https://th.bing.com/th/id/OIP.NxoaKN3iRnD5ooWSxmho_AHaEc?w=286&h=180&c=7&r=0&o=5&pid=1.7"
-          />
-          <div id="feed-two__image-likes">
-            <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i>438
-          </div>
-        </div>
-      </div>
 
-      <div class="feed__column-feed-three">
-        <div class="feed-three__details">
-          <h5 class="title-three">#BTS</h5>
-          <h6 class="hashtags-three">#bts#beach#lifetime</h6>
-          <div class="additional-three">
+        <div class="feed__column-feed-three">
+          <div class="feed-three__details">
+            <h5 class="title-three">#BTS</h5>
+            <h6 class="hashtags-three">#bts#beach#lifetime</h6>
+            <div class="additional-three">
+              <img
+                class="post-avatar"
+                src="https://th.bing.com/th/id/OIP.5pAcoGgDOPdWMMc_GeCRowHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7"
+              />
+              <span class="member-count-three">882 members</span>
+              <div class="divider">|</div>
+              <span class="member-status">Active</span>
+            </div>
+          </div>
+          <div class="feed-three__image">
             <img
-              class="post-avatar"
-              src="https://th.bing.com/th/id/OIP.5pAcoGgDOPdWMMc_GeCRowHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7"
+              src="https://th.bing.com/th/id/OIP.ncyeYbQItFFiR49iRXNaBQHaF7?w=180&h=180&c=7&r=0&o=5&pid=1.7"
             />
-            <span class="member-count-three">882 members</span>
-            <div class="divider">|</div>
-            <span class="member-status">Active</span>
+            <div id="feed-three__image-likes">
+              <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i>1389
+            </div>
           </div>
         </div>
-        <div class="feed-three__image">
-          <img
-            src="https://th.bing.com/th/id/OIP.ncyeYbQItFFiR49iRXNaBQHaF7?w=180&h=180&c=7&r=0&o=5&pid=1.7"
-          />
-          <div id="feed-three__image-likes">
-            <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i>1389
+
+        <div class="feed__column-feed-four">
+          <div class="feed-four__details">
+            <h5 class="title-four">#TBT</h5>
+            <h6 class="hashtags-four">#tbt#island#explore</h6>
+            <div class="additional-four">
+              <img
+                class="post-avatar"
+                src="https://th.bing.com/th/id/OIP.xhzddHb6769IlnX0p4KXBAHaD3?w=309&h=180&c=7&r=0&o=5&pid=1.7"
+              />
+              <span class="member-count-four">1,002 members</span>
+              <div class="divider">|</div>
+              <span class="member-status">Active</span>
+            </div>
+          </div>
+          <div class="feed-four__image">
+            <img
+              src="https://th.bing.com/th/id/OIP.P926Ff0jX441UZDce5nD3AHaFk?w=201&h=180&c=7&r=0&o=5&pid=1.7"
+            />
+            <div id="feed-four__image-likes">
+              <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i>577
+            </div>
+          </div>
+        </div>
+        <div class="feed__column-feed-five">
+          <div class="feed-five__details">
+            <h5 class="title-five">#FYI</h5>
+            <h6 class="hashtags-five">#fyi#celebrity#awards</h6>
+            <div class="additional-five">
+              <img
+                class="post-avatar"
+                src="https://th.bing.com/th/id/OIP.xhzddHb6769IlnX0p4KXBAHaD3?w=309&h=180&c=7&r=0&o=5&pid=1.7"
+              />
+              <span class="member-count-five">100,982 members</span>
+              <div class="divider">|</div>
+              <span class="member-status">Active</span>
+            </div>
+          </div>
+          <div class="feed-five__image">
+            <img
+              src="https://th.bing.com/th/id/OIP.wqayqKNcwIFKgL2vd9KxagHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+            />
+            <div id="feed-five__image-likes">
+              <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i
+              >7,345
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__column-feed-six">
+          <div class="feed-six__details">
+            <h5 class="title-six">#BTS</h5>
+            <h6 class="hashtags-six">#bts#safari#tours</h6>
+            <div class="additional-six">
+              <img
+                class="post-avatar"
+                src="https://th.bing.com/th/id/OIP.xhzddHb6769IlnX0p4KXBAHaD3?w=309&h=180&c=7&r=0&o=5&pid=1.7"
+              />
+              <span class="member-count-six">1,982 members</span>
+              <div class="divider">|</div>
+              <span class="member-status">Offline</span>
+            </div>
+          </div>
+          <div class="feed-six__image">
+            <img
+              src="https://th.bing.com/th/id/OIP.NxoaKN3iRnD5ooWSxmho_AHaEc?w=286&h=180&c=7&r=0&o=5&pid=1.7"
+            />
+            <div id="feed-six__image-likes">
+              <i class="fa-solid fa-heart fa-xs" style="color: #ffffff"></i>438
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -189,6 +261,7 @@
       </ul>
     </nav>
 
+    <!-- For the screen pixels, try using a maximum-width of 500px, and the height sould be more than 880px -->
     <div id="no-mobile">
       <span>Your screen is too big 😣</span>
     </div>

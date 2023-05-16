@@ -15,6 +15,9 @@ the status-bar part will be used on each stylesheet */
 .status-bar__column:first-child span {
   margin-right: 4px;
 }
+.status-bar__column:first-child i {
+  margin-right: 4px;
+}
 .status-bar__column:nth-child(2) span {
   margin-right: 40px;
 }
