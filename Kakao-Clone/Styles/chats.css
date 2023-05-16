@@ -1,0 +1,205 @@
+@import "Configurations/reset.css";
+@import "Configurations/variables.css";
+@import "Configurations/main-style.css";
+@import "Configurations/no-mobile.css";
+
+/* since the status bar will be displayed on each screen, 
+the status-bar part will be used on each stylesheet */
+.status-bar {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.1px;
+  width: 97%;
+}
+.status-bar__column:first-child span {
+  margin-right: 4px;
+}
+.status-bar__column:nth-child(2) span {
+  margin-right: 40px;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 25px 15px 25px;
+}
+.chats-header {
+  font-size: 25px;
+  font-weight: 600;
+}
+.icon-header span {
+  margin-left: 25px;
+  position: relative;
+}
+.red-dot-gear {
+  height: 7px;
+  width: 7px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.chat-component {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.chat-component__message-one {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.chat-component__avatar img {
+  width: 90px;
+  height: 120px;
+  border-radius: 80px;
+}
+.chat-component__columns {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.chat-component__column-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 350px;
+}
+.chat-component_name {
+  font-size: larger;
+  font-weight: bold;
+}
+.chat-component_time {
+  font-size: small;
+  opacity: 0.6;
+}
+.chat-component__column-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 350px;
+}
+.chat-component_subtitle {
+  font-size: medium;
+  color: rgb(126, 123, 123);
+  font-weight: bold;
+}
+.chat-component_unread {
+  height: 20px;
+  width: 20px;
+  color: white;
+  font-size: small;
+  background-color: red;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat-component__message-two {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.chat-component__avatar-two img {
+  width: 90px;
+  height: 120px;
+  border-radius: 80px;
+}
+
+/* animations */
+@keyframes rotateGear {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.icon-header .fa-gear:hover {
+  animation: rotateGear 3s linear infinite;
+}
+
+#splash-screen {
+  background-color: #ff8c00;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.nav {
+  background-color: rgb(247, 240, 233);
+  padding: 20px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  position: relative;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav__notification {
+  background-color: rgba(245, 154, 80, 0.815);
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 16px;
+  top: -16px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+.nav__notification-profile {
+  height: 8px;
+  width: 8px;
+  background-color: rgba(245, 154, 80);
+  border-radius: 50%;
+  position: absolute;
+  left: 27px;
+  bottom: 27px;
+}

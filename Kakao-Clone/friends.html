@@ -1,0 +1,123 @@
+<!-- The Friends Screen -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Styles/friends.css" />
+    <meta charset="UTF-8" />
+    <title>Friends - Kokoa Clone</title>
+    <script
+      src="https://kit.fontawesome.com/4b6d6f2d81.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <main>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Vodacom 4G</span>
+        <!--Network Icon Here-->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>13:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>90%</span>
+        <!--Battery Icon here-->
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <!--and the Lightning Icon-->
+        <i class="fa-solid fa-bolt" style="color: #1b1c1d"></i>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <h1 class="friends-header">Friends</h1>
+      <div class="icon-header">
+        <span>
+          <i
+            class="fa-solid fa-magnifying-glass fa-lg"
+            style="color: #ff8c00"
+          ></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-music fa-lg" style="color: #ff8c00"></i> </span
+        ><span>
+          <a href="settings.html">
+            <i class="fa-solid fa-gear fa-lg" style="color: #ff8c00"></i>
+          </a>
+          <div class="red-dot-gear"></div>
+        </span>
+      </div>
+    </header>
+
+    <a id="friends-names-display"
+      ><i class="fa-solid fa-circle-info" style="color: #ff8c00"></i>
+      <span id="name-display">Friends' Names Display</span>
+      <i class="fa-solid fa-chevron-right fa-xs" style="color: #ff8c00"></i>
+    </a>
+
+    <div class="user-component">
+      <div class="user-component__column-top">
+        <img
+          src="https://th.bing.com/th/id/OIP.COtyvlVj0EWQgiz-biULwwHaK4?w=127&h=186&c=7&r=0&o=5&pid=1.7"
+          class="user-component__avatar"
+        />
+        <div class="user-component__name">Godrich</div>
+      </div>
+      <div class="user-component__column-bottom">
+        <div class="channel_header">
+          <span>Channel</span>
+          <i class="fa-solid fa-chevron-up" style="color: #000000"></i>
+        </div>
+        <div class="channel_main">
+          <div class="channel_main-icon">
+            <i class="fa-solid fa-comment fa-2x" style="color: #000000"></i>
+          </div>
+          <div class="channel_main-label">
+            <span class="label">Channel</span>
+            <div>
+              <span class="notice">2</span
+              ><i class="fa-solid fa-chevron-right" style="color: #000000"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x" style="color: #ff8c00"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification">3</span>
+            <i
+              class="fa-sharp fa-regular fa-comment fa-2x"
+              style="color: #ff8c00"
+            ></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i
+              class="fa-solid fa-magnifying-glass fa-2x"
+              style="color: #ff8c00"
+            ></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__notification-profile"></div>
+            <i class="fa-solid fa-ellipsis fa-2x" style="color: #ff8c00"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>Your screen is too big 😣</span>
+    </div>
+  </main>
+</html>

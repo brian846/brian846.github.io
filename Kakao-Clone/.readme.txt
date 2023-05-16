@@ -1,0 +1,5 @@
+Hello!. 
+ This is the alternative coded clone of Kakao Talk. 
+	Please use the Login Page to begin and input any required details. 
+		From there you can browse the whole project.
+			THANK YOU!. : )

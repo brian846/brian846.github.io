@@ -1,0 +1,313 @@
+@import "Configurations/reset.css";
+@import "Configurations/variables.css";
+@import "Configurations/main-style.css";
+@import "Configurations/no-mobile.css";
+
+/* The conversation screens while having the same status bar will also 
+have a custom made text message input on the lower part of the screen */
+.status-bar {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.1px;
+  width: 97%;
+}
+.status-bar__column:first-child span {
+  margin-right: 4px;
+}
+.status-bar__column:nth-child(2) span {
+  margin-right: 40px;
+}
+
+.main-header {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right {
+  width: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-setting {
+  font-size: large;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+/* The dates of the conversations */
+#date_brown {
+  height: 25px;
+  width: 170px;
+  padding: 3px;
+  margin: 30px 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  color: white;
+  font-size: small;
+  background-color: rgb(220, 181, 72);
+}
+#date_enzo {
+  height: 25px;
+  width: 170px;
+  padding: 3px;
+  margin: 30px 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  color: white;
+  font-size: small;
+  background-color: rgb(220, 181, 72);
+}
+
+/* The sender's side of the conversation;  */
+#brown-received-side {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+.bubble-img {
+  border: 1px solid rgb(255, 255, 255);
+  height: 90px;
+  width: 63px;
+}
+.bubble-img img {
+  width: 60px;
+  height: 80px;
+  border-radius: 40px;
+}
+.bubble {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 5px;
+  justify-content: space-around;
+  position: relative;
+}
+.message-author {
+  font-weight: bold;
+}
+.bubble i {
+  margin-top: 5px;
+}
+.message-author {
+  margin-top: 20px;
+}
+.text-message {
+  color: white;
+  position: absolute;
+  top: 49px;
+  left: 19px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.time-stamp {
+  position: absolute;
+  font-weight: bold;
+  font-size: small;
+  top: 76px;
+  left: 63px;
+  margin-top: 10px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+  margin: 0px 20px 12px 20px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.message__author,
+.message__author-me,
+.message__author-two,
+.message__author-three,
+.message__author-me-brown {
+  opacity: 0.8;
+  font-size: 15px;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+}
+.message__bubble,
+.message__bubble-me,
+.message__bubble-two,
+.message__bubble-three,
+.message__bubble-me-brown {
+  color: white;
+  background-color: var(--kokoa-color);
+  opacity: 0.8;
+  padding: 15px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.message__info,
+.message__info-me-brown,
+.message__info-me-enzo {
+  display: flex;
+  align-items: flex-end;
+}
+.message__time {
+  opacity: 0.9;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+/* My side of the conversation */
+.message__bubble-me,
+.message__bubble-me-brown {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  order: 1;
+}
+.message__author-me {
+  margin-left: 97px;
+}
+.message-row--me {
+  margin-left: 340px;
+}
+.message-row--me-brown {
+  margin-left: 125px;
+}
+.message__author-me-brown {
+  margin-left: 323px;
+}
+
+/* The Reply Input and the Keyboard. */
+.plus-icon {
+  height: 10px;
+  width: 10px;
+  padding: 8px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.plus-icon:hover {
+  border-color: #ff8c00;
+  padding: 10px;
+  font-size: larger;
+}
+#reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(205, 200, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  transition: all 1.7s ease-in-out;
+}
+#reply .reply__column:first-child {
+  width: 10%;
+}
+#reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+#reply input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid gray;
+  transition: all 1.3s ease-in-out;
+}
+
+.reply__column:last-child > button {
+  position: absolute;
+  top: 4px;
+  right: -18px;
+  background-color: #ff8c00;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.reply__column:last-child > button:focus,
+.reply__column:last-child > button:hover {
+  font-size: larger;
+}
+.reply__column:last-child > i {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+.reply__column:last-child > i:focus,
+.reply__column:last-child > i:hover {
+  font-size: x-large;
+}
+
+/* animations */
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+#chat {
+  animation: fadein 0.8s linear;
+}
+
+@keyframes fadeleft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.message__info {
+  animation: fadeleft 1s linear;
+}
+@keyframes faderight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message__info-me-enzo,
+.message__info-me-brown {
+  animation: faderight 1s linear;
+}
+
+#reply:focus-within .reply__column:first-child,
+#reply:focus-within .fa-face-smile,
+#reply:focus-within button {
+  opacity: 0;
+  transition: all 1s linear;
+}
+#reply:focus-within input {
+  width: 91vw;
+  transform: translateX(-13%);
+}
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: all 0.3s ease-in-out;
+}

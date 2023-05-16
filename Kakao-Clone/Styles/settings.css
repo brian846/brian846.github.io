@@ -1,0 +1,157 @@
+@import "Configurations/reset.css";
+@import "Configurations/variables.css";
+@import "Configurations/main-style.css";
+@import "Configurations/no-mobile.css";
+
+/* as in all the other screens,the status bar will be displayed here on the settings screen */
+.status-bar {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.1px;
+  width: 97%;
+}
+.status-bar__column:first-child span {
+  margin-right: 4px;
+}
+.status-bar__column:nth-child(2) span {
+  margin-right: 40px;
+}
+
+.main-header {
+  margin-top: 20px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-setting {
+  font-size: large;
+  font-weight: bold;
+}
+
+.settings__list {
+  margin-top: 30px;
+}
+.settings__list-notices {
+  height: 70px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.settings__list-kokoa-lab {
+  height: 70px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.settings__list-version {
+  height: 90px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.settings__list-privacy {
+  height: 70px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.settings__list-notifications {
+  height: 70px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.settings__list-friends {
+  height: 70px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.settings__list-chats {
+  height: 70px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.settings__list-display {
+  height: 70px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.settings__list-themes {
+  height: 70px;
+  width: 457px;
+  margin-left: 20px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  align-items: center;
+}
+.N-notification {
+  height: 13px;
+  width: 13px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: red;
+  font-size: small;
+  color: white;
+  margin-left: 07px;
+}
+.settings__name {
+  font-size: large;
+  font-weight: bold;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.additional-version {
+  color: rgb(71, 70, 70);
+  display: flex;
+  margin-left: 240px;
+}
+.additional-theme {
+  color: rgb(71, 70, 70);
+  display: flex;
+  margin-left: 220px;
+}
+
+.nav {
+  background-color: rgb(247, 240, 233);
+  padding: 20px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

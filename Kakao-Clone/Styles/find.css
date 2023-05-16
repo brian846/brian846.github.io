@@ -1,0 +1,330 @@
+@import "Configurations/reset.css";
+@import "Configurations/variables.css";
+@import "Configurations/main-style.css";
+@import "Configurations/nav-bar.css";
+@import "Configurations/no-mobile.css";
+
+/* as in all the other screens,the status bar will be displayed here on the find screen */
+.status-bar {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.1px;
+  width: 97%;
+}
+.status-bar__column:first-child span {
+  margin-right: 4px;
+}
+.status-bar__column:nth-child(2) span {
+  margin-right: 40px;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 25px 15px 25px;
+}
+.chats-header {
+  font-size: 25px;
+  font-weight: 600;
+}
+.icon-header span {
+  margin-left: 25px;
+  position: relative;
+}
+.red-dot-gear {
+  height: 7px;
+  width: 7px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+#find_icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+  padding: 10px 10px;
+  height: 110px;
+  width: 435px;
+  border-bottom: 1px solid gainsboro;
+}
+.find_icons-qrcode {
+  height: 120px;
+  width: 90px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.find_icons-contacts {
+  height: 120px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.find_icons-id {
+  height: 120px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.find_icons-invite {
+  height: 120px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#find_icons span {
+  color: #ff8c00;
+}
+
+#recommended_friends {
+  margin: 0px 20px;
+  padding: 10px 0px;
+  height: 220px;
+  width: 439px;
+  border-bottom: 1px solid gainsboro;
+}
+.recommended_friends-head {
+  font-weight: bold;
+  color: rgb(118, 117, 117);
+}
+.recommended_friends-body {
+  height: 190px;
+  width: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  opacity: 0.8;
+}
+.feed__column-feed-head {
+  height: 25px;
+  width: 440px;
+  margin: 8px 0px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+
+/* Feed One */
+.feed__column-feed-one {
+  height: 95px;
+  width: 440px;
+  margin: 13px 0px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-one__image {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.feed-one__image img {
+  width: 120px;
+  border-radius: 13px;
+}
+#feed-one__image-likes {
+  height: 18px;
+  width: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1px;
+  position: absolute;
+  top: 65px;
+  left: 65px;
+}
+.title-one {
+  font-weight: bold;
+}
+.hashtags-one {
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.additional-one {
+  display: flex;
+  align-items: center;
+}
+.post-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.member-count-one {
+  opacity: 0.7;
+}
+.member-status {
+  color: rgba(233, 19, 19, 0.768);
+  font-weight: 600;
+}
+
+/* Feed Two */
+.feed__column-feed-two {
+  height: 95px;
+  width: 440px;
+  margin: 5px 0px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-two__image {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.feed-two__image img {
+  width: 120px;
+  border-radius: 13px;
+}
+#feed-two__image-likes {
+  height: 18px;
+  width: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1px;
+  position: absolute;
+  top: 49px;
+  left: 65px;
+}
+.title-two {
+  font-weight: bold;
+}
+.hashtags-two {
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.additional-two {
+  display: flex;
+  align-items: center;
+}
+.post-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.member-count-two {
+  opacity: 0.7;
+}
+.member-status {
+  color: rgba(233, 19, 19, 0.768);
+  font-weight: 600;
+}
+
+/* Feed Three */
+.feed__column-feed-three {
+  height: 95px;
+  width: 440px;
+  margin: 5px 0px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-three__image {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.feed-three__image img {
+  width: 120px;
+  height: 80px;
+  border-radius: 13px;
+}
+#feed-three__image-likes {
+  height: 18px;
+  width: 54px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1px;
+  position: absolute;
+  top: 53px;
+  left: 62px;
+}
+
+.title-three {
+  font-weight: bold;
+}
+.hashtags-three {
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.additional-three {
+  display: flex;
+  align-items: center;
+}
+.post-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.member-count-three {
+  opacity: 0.7;
+}
+.member-status {
+  color: rgba(233, 19, 19, 0.768);
+  font-weight: 600;
+}
+
+/* animations */
+@keyframes rotateGear {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.icon-header .fa-gear:hover {
+  animation: rotateGear 3s linear infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(1);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+#feed-one__image-likes i {
+  will-change: transform;
+  animation: heartbeat 1s linear infinite;
+}
+#feed-two__image-likes i {
+  will-change: transform;
+  animation: heartbeat 1s linear infinite;
+}
+#feed-three__image-likes i {
+  will-change: transform;
+  animation: heartbeat 1s linear infinite;
+}
