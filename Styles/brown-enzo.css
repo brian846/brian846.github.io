@@ -6,11 +6,17 @@
 /* The conversation screens while having the same status bar will also 
 have a custom made text message input on the lower part of the screen */
 .status-bar {
-  margin: 10px;
+  margin-left: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 14.1px;
   width: 97%;
+  height: 38px;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 .status-bar__column:first-child span {
   margin-right: 4px;
@@ -21,9 +27,11 @@ have a custom made text message input on the lower part of the screen */
 .status-bar__column:nth-child(2) span {
   margin-right: 40px;
 }
-
+.status-bar__column {
+  margin-bottom: 10px;
+}
 .main-header {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: 20px;
   padding: 0px 0px;
   display: flex;

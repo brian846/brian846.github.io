@@ -4,12 +4,17 @@
 @import "Configurations/no-mobile.css";
 
 .status-bar {
-  margin: 10px;
+  margin-left: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 14.1px;
-  position: fixed;
   width: 97%;
+  height: 38px;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 .status-bar__column:first-child span {
   margin-right: 4px;
@@ -20,8 +25,11 @@
 .status-bar__column:nth-child(2) span {
   margin-right: 40px;
 }
-
+.status-bar__column {
+  margin-bottom: 10px;
+}
 .welcome-header {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
